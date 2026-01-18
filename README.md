@@ -31,7 +31,7 @@ func main {
 ### Installation
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/mino.git
+git clone https://github.com/MaherJon/Mino.git
 cd mino
 
 # Build the compiler
@@ -210,7 +210,7 @@ CMake (optional)
 ```
 bash
 # Clone and build
-git clone https://github.com/MaherJon/mino.git
+git clone https://github.com/MaherJon/Mino.git
 cd mino
 
 # Build the compiler
