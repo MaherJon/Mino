@@ -65,7 +65,7 @@ minoc hello.mino -o hello.c
 minoc hello.mino -run
 ```
 ## 📖 Why Mino?
-## 🎯 For C Developers
+### 🎯 For C Developers
 ```c
 // What you write in C:
 struct Person {
@@ -226,17 +226,14 @@ make test
 # Install globally (optional)
 make install
 ```
-##📊 Performance
+## 📊 Performance
 Mino generates optimized C code, achieving performance comparable to hand-written C:
 
-Operation	 Mino	 Python	C (handwritten)
---------------------------------------------
-Fibonacci	 0.8s	 3.2s	   0.7s
---------------------------------------------
-Matrix Mul 1.2s	 12.4s	 1.1s
---------------------------------------------
-File I/O	 0.3s	 1.8s	   0.2s
---------------------------------------------    
+| Operation	| Mino	| Python  |  C (handwritten) |
+| -----------|-------|---------|-------------------|
+| Fibonacci	 | 0.8s	 | 3.2s	   | 0.7s |
+| Matrix Mul | 1.2s	 | 12.4s   | 1.1s |
+| File I/O	 | 0.3s	 | 1.8s	   | 0.2s |
 ## 🌟 Community & Contribution
 ### Getting Involved
 1.Fork the repository    
