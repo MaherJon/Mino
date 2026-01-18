@@ -1,8 +1,4 @@
 # Mino - Elegant Object-Oriented Language    
-https://img.shields.io/badge/Mino-Object--Oriented%2520Language-blue    
-https://img.shields.io/badge/License-MIT-green    
-https://img.shields.io/badge/Status-Development%2520Active-yellow    
-https://img.shields.io/badge/Powered%2520by-C-orange
 
 ## ✨ Language Features    
 Mino is a modern object-oriented programming language that compiles to C, designed to strike the perfect balance between simplicity and powerful functionality.
