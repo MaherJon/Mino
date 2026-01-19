@@ -1,0 +1,16 @@
+#include <System>
+
+func main() {
+    sys.IO.print.Println("Hello from Mino Compiler!");
+    
+    let x = 10 + 5 * 2;
+    sys.IO.print.println("x = %d", x);
+    
+    if (x > 15) {
+        sys.IO.print.Println("x is greater than 15");
+    } else {
+        sys.IO.print.Println("x is 15 or less");
+    }
+    
+    return 0;
+}
