@@ -1,0 +1,17 @@
+// examples/math.mino
+#include <System.h>
+
+func int main() {
+    let a: int = 42;
+    let b: int = 3;
+
+    // abs int
+    let aa = sys.Math.absInt(0 - a);
+    sys.IO.print.PrintIntLn(aa);
+
+    // pow int
+    let p = sys.Math.powInt(2, b);
+    sys.IO.print.PrintIntLn(p);
+
+    return 0;
+}

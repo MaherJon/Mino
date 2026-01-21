@@ -1,0 +1,24 @@
+#include <System.h>
+
+// Function definition: return type first, parameters have types
+func int add(int a, int b) {
+    return a + b;
+}
+
+// Main function
+func int main() {
+    // Variable declarations: support two formats
+    let x: int = 10;      // with colon
+    let y int = 20;       // without colon
+    
+    // Type inference
+    let z = x + y;        // inferred as int
+    
+    // Function call
+    let result = add(x, y);
+    
+    // Use system library
+    sys.IO.print.PrintInt(result);
+    
+    return 0;
+}
