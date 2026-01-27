@@ -1,7 +1,7 @@
-# Mino - Elegant Object-Oriented Language    
+# Mino — Elegant Object-Oriented Language (stable: v1.0)
 
-## ✨ Language Features    
-Mino is a modern object-oriented programming language that compiles to C, designed to strike the perfect balance between simplicity and powerful functionality.
+## ✨ Language Features
+Mino is a modern object-oriented programming language that compiles to C, designed to strike the balance between simplicity and powerful functionality. Current stable release is v1.0 (see `v1.x/v1.0`).
 
 ``` Mino
 // Elegant syntax example
@@ -32,12 +32,12 @@ func main {
 ```bash
 # Clone the repository
 git clone https://github.com/MaherJon/Mino.git
-cd mino
 
-# Build the compiler
-make build
+# Build the compiler (v1.0)
+cd Mino/v1.x/v1.0
+make
 
-# Run examples
+# Run examples (from v1.0)
 make example
 ```
 ### Your First Mino Program
@@ -54,11 +54,12 @@ func main {
 #### Compile and run:
 
 ```bash
-# Compile to C
-minoc hello.mino -o hello.c
+# Compile and link to native executable (v1.0)
+bin/minoc hello.mino
+# produces: hello.mino.out
 
-# Generate executable (automatic)
-minoc hello.mino -run
+# Run generated executable
+./hello.mino.out
 ```
 ## 📖 Why Mino?
 ### 🎯 For C Developers
@@ -104,20 +105,17 @@ Mino Source (.mino)
 ```
 ### Project Structure
 ```text
-mino/
-├── compiler/          # Compiler source (C)
-│   ├── lexer/        # Lexical analysis
-│   ├── parser/       # Syntax analysis
-│   ├── ast/          # Abstract syntax tree
-│   ├── codegen/      # C code generation
-│   └── main.c        # Compiler entry point
-├── runtime/          # Runtime library
-│   ├── core/         # Core types and functions
-│   ├── gc/           # Garbage collector (optional)
-│   └── io/           # Input/output system
-├── stdlib/           # Standard library
-├── examples/         # Example programs
-└── tests/            # Test suite
+Mino/ (repository root)
+├── v0.x/
+├── v1.x/
+│   └── v1.0/
+│       ├── Makefile
+│       ├── docs/
+│       ├── examples/
+│       ├── include/
+│       └── src/
+├── LICENSE
+└── README.md
 ```
 ## 📚 Language Tour
 ### Classes & Objects
@@ -206,14 +204,13 @@ GCC or Clang
 Make    
 CMake (optional)    
 
-### Build Steps
-```
-bash
+### Build Steps (v1.0)
+```bash
 # Clone and build
 git clone https://github.com/MaherJon/Mino.git
-cd mino
+cd Mino/v1.x/v1.0
 
-# Build the compiler
+# Build the compiler (result: bin/minoc)
 make
 
 # Run tests
@@ -222,6 +219,8 @@ make test
 # Install globally (optional)
 make install
 ```
+
+Note: when `bin/minoc` compiles a Mino program it may emit assembly to `build/out.s` (the code generator output). Keep a copy of `build/out.s` if you need to inspect generated assembly before running `make clean`.
 ## 📊 Performance
 Mino generates optimized C code, achieving performance comparable to hand-written C:
 
@@ -232,13 +231,13 @@ Mino generates optimized C code, achieving performance comparable to hand-writte
 | File I/O	 | 0.3s	 | 1.8s	   | 0.2s |
 ## 🌟 Community & Contribution
 ### Getting Involved
-1.Fork the repository    
-2.Check Issues for tasks    
-3.Join our Discord for discussions    
-4.Read CONTRIBUTING.md
+- **Fork:** Fork the repository and create feature branches.
+- **Issues:** Check Issues and `v1.x/v1.0/RELEASE_NOTES.md` for tasks.
+- **Chat:** See `v1.x/v1.0/docs` for community/communication links.
+- **Contributing:** Follow any guidance in `v1.x/v1.0/docs`.
 
 ## 📄 License
-Mino is released under the MIT License. See LICENSE for details.
+Mino is released under the GNU General Public License v2.0 (GPLv2). See LICENSE for full text.
 
 ## 🙏 Acknowledgments
 Inspired by C++, Java, and Rust    
